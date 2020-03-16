@@ -1,0 +1,29 @@
+body { 
+    background-color: #13161c;
+    margin: 0;
+    padding: 0;  
+}
+
+.head { 
+    margin-top: 250px;
+    margin-left: 150px;
+}
+
+.spanclass {
+    position: absolute; 
+    margin-left: 120px;    
+    font-family: 'Bellota Text', cursive;
+    color:white;
+    font-size: 4.5em;
+    cursor: auto;
+    transition:  font-size 0.5s;
+}
+
+.classTWo { 
+    margin-left: 20.9%;
+}
+
+.spanclass:hover {   
+    font-size:5em;
+    color:red;
+}
