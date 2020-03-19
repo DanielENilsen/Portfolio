@@ -1,22 +1,18 @@
-html {
-    scroll-behavior: smooth;
-   
-}
 
 body { 
     background-color: #13161c;
     margin: 0;
+    font-family: 'Bellota Text', cursive; 
     padding: 0;  
 }
 .section-1 {
-    margin-bottom: 30%;
+    margin-bottom: 32%;
     
 }
 .head { 
-display: flex; 
+    display: flex; 
     margin-top: 20%;
-    margin-left: 20%;    
-  
+    margin-left: 15%;     
 }
 
 
@@ -33,8 +29,7 @@ display: flex;
     transition:  font-size 0.5s;
 
     &:hover {
-        font-size: 6em;
-        
+        font-size: 6em;        
     }
 }
  
@@ -85,23 +80,27 @@ display: flex;
 }
 
 .section-2 {
-position: absolute;
-display: none;
-    width: 100%;
-
-    height: 400px;
-    color:white;
+   
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 950px;
+   color:white;
+   & h1 {
+   
+       margin-left: 40%;
+       margin-top: 5%;
+       font-size: 4em;
+       display: none;
+       animation: easytest 3s;
+    }
 
    
 }
 .displaySectiontwo {
     display: block;
     animation: easytest 1.3s;
-        font-family: 'Bellota Text', cursive;
-
     
-
-
 }
 
 .section-3 { 
@@ -120,4 +119,14 @@ display: none;
     } to { 
         opacity: 1;
     }
+}
+
+
+.art {
+    display: none;
+    margin-left: 100px;
+    width: 10%;
+    background-color: white;
+    box-shadow: 0px 0px  5px solid black;
+    color:red;
 }
