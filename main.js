@@ -67,4 +67,3 @@ setTimeout(function() {
 
 }
 
-
