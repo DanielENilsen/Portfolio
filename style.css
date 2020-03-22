@@ -17,6 +17,7 @@ body {
   color: red;
 }
 .main a {
+  margin-top: 20px;
   margin-right: 100px;
   float: right;
   color: red;
