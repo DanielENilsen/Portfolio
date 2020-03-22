@@ -5,6 +5,7 @@ let artprojects = document.querySelector('.art');
 var sectionTwo = document.getElementById('sectionTwo');
 let smoothBehavor = document.querySelector("html");
 let myPro = document.getElementById('myPro');
+let devide = document.getElementById('devide');
 
 
 setTimeout(function() { 
@@ -18,12 +19,16 @@ function textApper() {
     var textpos = window.innerHeight / 0.6;
     
     
-    if(newpos <  textpos) {   
+    if(newpos < textpos) {   
         textApper.classList.add('displaySectiontwo');  
-        myPro.style.display = "block";   
+        myPro.style.display = "block";  
+        devide.style.display = "block";
+        
+    
+       
          
     }  
-    cardsPopup();
+    
 
 }
 
@@ -67,3 +72,4 @@ setTimeout(function() {
 
 }
 
+window.addEventListener('scroll',textApper);
