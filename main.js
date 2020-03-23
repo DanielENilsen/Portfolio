@@ -8,9 +8,18 @@ let myPro = document.getElementById('myPro');
 let devide = document.getElementById('devide');
 
 
+const box = document.getElementById('sectionTwo');
+
+window.addEventListener('scroll' , function () { 
+    if(box.getBoundingClientRect().top < window.innerHeight) { 
+        box.style.background  = "red";
+    }
+})
+
+
 setTimeout(function() { 
     smoothBehavor.style.scrollBehavior = "smooth";
-},1700);
+},10);
 
 
 function textApper() { 
