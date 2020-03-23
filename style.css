@@ -4,6 +4,7 @@ body {
   font-family: "Bellota Text", cursive;
   padding: 0;
 }
+
 .main {
   top: 0px;
   height: 50px;
@@ -23,14 +24,17 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .section-1 {
   margin-bottom: 32%;
 }
+
 .head {
   display: flex;
   margin-top: 20%;
   margin-left: 15%;
 }
+
 .spanclass {
   display: none;
   margin-left: 20px;
@@ -45,12 +49,15 @@ body {
 .spanclass:hover {
   font-size: 6em;
 }
+
 .classTWo {
   margin-left: 2.9%;
 }
+
 .welcome {
   color: red;
 }
+
 @keyframes animate {
   from {
     margin-top: 5%;
@@ -88,6 +95,7 @@ body {
 .texte:hover {
   font-size: 4.8em;
 }
+
 .section-2 {
   display: block;
   width: 100%;
@@ -101,16 +109,20 @@ body {
   display: none;
   animation: easytest 3s;
 }
+
 .displaySectiontwo {
   display: block;
   animation: easytest 1.3s;
 }
+
 .section-3 {
   display: none;
 }
+
 .section-4 {
   display: none;
 }
+
 @keyframes easytest {
   from {
     opacity: 0;
@@ -137,9 +149,12 @@ body {
   color: red;
   flex: 1;
 }
+
 .devide {
   display: none;
   display: flex;
   flex-wrap: nowrap;
   animation: easytest 2s;
 }
+
+/*# sourceMappingURL=style.css.map */
