@@ -102,14 +102,8 @@ body {
   animation: easytest 3s;
 }
 .displaySectiontwo {
+  position: absolute;
   display: block;
-  animation: easytest 1.3s;
-}
-.section-3 {
-  display: none;
-}
-.section-4 {
-  display: none;
 }
 @keyframes easytest {
   from {
@@ -130,7 +124,7 @@ body {
   }
 }
 .art {
-  margin-left: 100px;
+  margin-left: 200px;
   width: 10%;
   background-color: white;
   box-shadow: 0px 0px 5px solid black;
@@ -138,8 +132,8 @@ body {
   flex: 1;
 }
 .devide {
-  display: none;
+  border: 1px solid black;
   display: flex;
-  flex-wrap: nowrap;
-  animation: easytest 2s;
+  flex-direction: row;
+  justify-content: center;
 }
