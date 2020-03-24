@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Bellota Text", cursive;
   padding: 0;
+  color: white;
 }
 .main {
   top: 0px;
@@ -24,20 +25,21 @@ body {
   color: white;
 }
 .section-1 {
-  margin-bottom: 32%;
+  position: absolute;
 }
 .head {
   display: flex;
-  margin-top: 20%;
-  margin-left: 15%;
+  padding-left: 17em;
+  position: absolute;
 }
 .spanclass {
-  display: none;
+  display: block;
   margin-left: 20px;
+  margin-top: 40%;
   text-transform: uppercase;
   font-family: "Bellota Text", cursive;
   color: white;
-  font-size: 4.5em;
+  font-size: 5em;
   animation: animate 0.5s;
   cursor: default;
   transition: font-size 0.5s;
@@ -46,38 +48,38 @@ body {
   font-size: 6em;
 }
 .classTWo {
-  margin-left: 2.9%;
+  margin-left: 5.9%;
 }
 .welcome {
   color: red;
 }
 @keyframes animate {
   from {
-    margin-top: 5%;
+    margin-top: 45%;
     opacity: 0;
   }
   to {
-    margin-top: 0%;
+    margin-top: 40%;
     opacity: 1;
   }
 }
 @keyframes animate2 {
   from {
     opacity: 0;
-    margin-top: 15%;
   }
   to {
-    margin-top: 12%;
     opacity: 1;
   }
 }
 .texte {
+  padding-left: 12em;
   cursor: pointer;
-  animation: animate2 1s;
-  display: none;
+  animation: animate2 1.5;
+  display: block;
   font-size: 4.5em;
   text-align: center;
-  margin-top: 12%;
+  padding-top: 9.5em;
+  height: 100px;
   color: white;
   transition: font-size 1.3s;
 }
@@ -85,11 +87,8 @@ body {
   text-transform: none;
   color: white;
 }
-.texte:hover {
-  font-size: 4.8em;
-}
 .section-2 {
-  display: block;
+  margin-top: 50%;
   width: 100%;
   height: 950px;
   color: white;
@@ -98,20 +97,7 @@ body {
   margin-left: 40%;
   padding-top: 10%;
   font-size: 4em;
-  display: none;
-  animation: easytest 3s;
-}
-.displaySectiontwo {
-  position: absolute;
   display: block;
-}
-@keyframes easytest {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 @keyframes easytest {
   from {
@@ -124,16 +110,57 @@ body {
   }
 }
 .art {
-  margin-left: 200px;
-  width: 10%;
-  background-color: white;
+  margin-left: 100px;
+  width: 60%;
+  cursor: pointer;
+  height: 20em;
   box-shadow: 0px 0px 5px solid black;
-  color: red;
-  flex: 1;
+}
+.art__text {
+  font-size: 2em;
 }
 .devide {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  margin-top: 100px;
+  height: 400px;
+  grid-template-columns: auto auto auto;
+}
+.section-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 10em;
+}
+.text {
+  margin-left: 10%;
+}
+.aboutMeImg {
+  width: 85%;
+  margin-bottom: 200px;
+}
+.about {
+  margin-left: 10%;
+}
+.about__text {
+  font-size: 3em;
+}
+.about__header {
+  font-size: 2.5em;
+}
+.about__small {
+  font-size: 2em;
+}
+.about__aboutText {
+  width: 80%;
+  font-size: 1.5em;
+}
+.section-4 {
+  margin-top: 100px;
+  height: 200px;
+}
+.section-4 footer {
+  width: 100%;
+  background-color: #27262e;
+  height: 200px;
 }
