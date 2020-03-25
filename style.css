@@ -8,19 +8,14 @@ body {
 .main {
   top: 0px;
   height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
   position: sticky;
-}
-.main header {
-  color: red;
-}
-.main li {
-  color: red;
 }
 .main a {
   margin-top: 20px;
   margin-right: 100px;
   float: right;
-  color: red;
   text-decoration: none;
   color: white;
 }
@@ -46,6 +41,11 @@ body {
 }
 .spanclass:hover {
   font-size: 6em;
+}
+.solveOne {
+  background-image: url("headerImage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .classTWo {
   margin-left: 5.9%;
@@ -80,7 +80,6 @@ body {
   text-align: center;
   padding-top: 9.5em;
   height: 100px;
-  position: absolute;
   color: white;
   transition: font-size 1.3s;
 }
@@ -114,7 +113,7 @@ body {
 .art {
   margin-top: 5em;
   margin-left: 100px;
-  width: 60%;
+  width: 70%;
   cursor: pointer;
   height: 20em;
   background-color: #13161c;
@@ -142,8 +141,10 @@ body {
 }
 .about {
   margin-left: 10%;
+  font-family: "Quicksand", sans-serif;
 }
 .about__text {
+  font-family: "Baloo Thambi 2", cursive;
   font-size: 3em;
 }
 .about__header {
@@ -153,6 +154,7 @@ body {
   font-size: 2em;
 }
 .about__aboutText {
+  font-family: "Bellota Text", cursive;
   width: 80%;
   font-size: 1.5em;
 }
@@ -163,12 +165,12 @@ body {
   margin-bottom: 8%;
 }
 .section-4 {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .section-4 footer {
   width: 100%;
   background-color: #171b23;
-  height: 250px;
+  height: 350px;
 }
 .footinfo {
   margin-left: 25%;
@@ -181,4 +183,7 @@ body {
 .footinfo h1 {
   margin-left: 25%;
   padding-top: 2%;
+}
+.footinfo i span {
+  font-family: "Quicksand", sans-serif;
 }
