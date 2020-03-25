@@ -1,11 +1,19 @@
+$extraColor :rgb(39, 38, 46);
+$backgroundColor:#13161c;
 
+
+
+@mixin backImage  { 
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;    
+}
 
 body { 
-    background-color: #13161c;
+    background-color:$backgroundColor;
     margin: 0;
     font-family: 'Bellota Text', cursive; 
     padding: 0;  
-
+    color: white;
 
 }
 
@@ -13,145 +21,109 @@ body {
 .main { 
     top:0px; 
     height: 50px; 
-    position: sticky;
-    & header {
-        color:red;          
-    }
-
-    & li  {   color:red;
-    }
+    font-size: 1.5em;   
+    font-weight: bold;
+    position: sticky;      
+   
     & a {
         margin-top: 20px;
         margin-right: 100px;
-        float: right;   color:red;
-        text-decoration: none;
-    
+        float: right; 
+        text-decoration: none;    
         color:white;
     }
 }
 
 
 .section-1 {
-   
-    margin-bottom: 32%;
-    
+    position: absolute;    
 }
+
 .head { 
     display: flex; 
-    margin-top: 20%;
-    margin-left: 15%;     
+    padding-left:17em;
+    position: absolute;  
 }
 
 
 .spanclass {
-    display: none;
-    margin-left: 20px;  
+    display: block;
+    margin-left: 20px;    
+    margin-top: 40%;
     text-transform: uppercase;     
     font-family: 'Bellota Text', cursive;
     color:white;
-    font-size: 4.5em;
+    font-size: 5em;
     animation:  animate 0.5s;
     cursor: default;
     transition:  font-size 0.5s;
 
-    &:hover {
-        font-size: 6em;        
-    }
+    &:hover { 
+        font-size: 6em;
+    }   
+}
+
+.solveOne { 
+    background-image: url("headerImage.jpg");
+    @include  backImage;
 }
  
 .classTWo { 
-    margin-left: 2.9%;
+    margin-left: 5.9%;
 }
-.welcome {
-    
+.welcome {    
     color:red;
 }
 
 @keyframes animate {
     from { 
-        margin-top: 5%;
+        margin-top: 45%;
         opacity: 0;
     }
     to { 
-        margin-top: 0%;
+        margin-top: 40%;
         opacity:1
     }
 }
 
 @keyframes animate2 {
     from {
-        opacity: 0;
-        margin-top: 15%;
-    } to {
-        margin-top: 12%;
+        opacity: 0;       
+    }to{      
         opacity: 1;
-
     }
 }
 
 .texte { 
+    padding-left:12em;
     cursor: pointer;
-    animation: animate2 1s;
-    display: none;
-    font-size: 4.5em;
-
+    animation: animate2 1.5;   
+    display: block;
+    font-size: 4.5em;    
     text-align: center;
-    margin-top: 12%;
+    padding-top: 9.5em;
+    height: 100px;  
     color:white; 
-    transition: font-size 1.3s;
-    
+    transition: font-size 1.3s;    
     & a {
         text-transform: none;
         color: white;
-    }
-    &:hover {
-        font-size: 4.8em;
-      
-    }
-
+    }  
 }
 
-.section-2 {
-   
-   animation: easytest 10s;
+.section-2 { 
    display: block;
+   background-color: #171b23; 
+   margin-top: 50%;   
    width: 100%;
-   height: 950px;
+   height: 80em;
    color:white;
    & h1 {
        margin-left: 40%;
        padding-top: 10%;
        font-size: 4em;
-       display: none;
-       animation: easytest 3s;
-    }
-
-
-   
-}
-.displaySectiontwo {
-    position: absolute;
-    display: block;
-  
-    
-}
-
-.section-3 { 
-   
-}
-
-
-.section-4 { 
-   
-}
-
-@keyframes easytest { 
-    from { 
-        opacity: 0;
-
-    } to { 
-        opacity: 1;
-    }
+       display: block;
+    }   
 }
 
 @keyframes easytest { 
@@ -162,27 +134,93 @@ body {
     } to { 
 
         margin-top: 10%;
-
         opacity: 1;
     }
 }
-
-
 .art {
-    margin-left: 200px;
-    width: 10%;
-    background-color: white;
-    box-shadow: 0px 0px  5px solid black;
-    color:red;  
-    flex: 1;
-
+   margin-top: 5em;
+    margin-left: 100px;
+    width:70%;
+    cursor: pointer;
+    height: 20em;
+    background-color: $backgroundColor;    
+  
+    &__text { 
+        font-size: 2em;
+    }    
 }
 
 .devide {   
-    
-    border: 1px solid black;
-    display: flex;
-  flex-wrap: nowrap;
-    justify-content: center; 
-  
+    display: grid !important;
+    width: 100%;      
+    height: 400px;  
+    grid-template-columns: auto auto auto;  
 }
+
+.section-3 {  
+    width: 100%;     
+    margin-bottom: 20%;
+}
+
+.text {
+    margin-left: 10%;
+}
+
+.aboutMeImg {    
+    margin-top: 3em;
+    width: 95%;
+    margin-bottom: 200px;
+}
+
+.about {    
+    margin-left: 10%;
+    font-family: 'Quicksand', sans-serif; 
+    &__text { 
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 3em;
+    }
+    &__header {       
+       font-size: 2.5em;
+    }
+    &__small { 
+        font-size: 2em;              
+    }
+
+    &__aboutText { 
+        font-family: 'Bellota Text', cursive; 
+        width: 80%;
+        font-size: 1.5em;
+    }  
+}
+
+.newtxt { 
+    padding-top: 100px;
+    text-align: center;
+    font-size: 4em;   
+    margin-bottom: 8%;    
+}
+.section-4 { 
+    margin-top: 150px;
+    & footer {
+        width: 100%;       
+        background-color: #171b23; 
+        height: 350px;    
+    }     
+}
+
+.footinfo { 
+    margin-left: 25%;
+    font-size: 2em;
+     & i {        
+        font-size: 0.85em;
+        padding-left: 50px;       
+    }
+    & h1 {
+        margin-left: 25%;
+        padding-top: 2%;        
+    }
+    &  i span {
+        font-family: 'Quicksand', sans-serif; 
+    }    
+}
+
