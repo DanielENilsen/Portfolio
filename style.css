@@ -5,7 +5,6 @@ body {
   padding: 0;
   color: white;
 }
-
 .main {
   top: 0px;
   height: 50px;
@@ -25,17 +24,14 @@ body {
   text-decoration: none;
   color: white;
 }
-
 .section-1 {
   position: absolute;
 }
-
 .head {
   display: flex;
   padding-left: 17em;
   position: absolute;
 }
-
 .spanclass {
   display: block;
   margin-left: 20px;
@@ -51,15 +47,12 @@ body {
 .spanclass:hover {
   font-size: 6em;
 }
-
 .classTWo {
   margin-left: 5.9%;
 }
-
 .welcome {
   color: red;
 }
-
 @keyframes animate {
   from {
     margin-top: 45%;
@@ -87,6 +80,7 @@ body {
   text-align: center;
   padding-top: 9.5em;
   height: 100px;
+  position: absolute;
   color: white;
   transition: font-size 1.3s;
 }
@@ -94,11 +88,11 @@ body {
   text-transform: none;
   color: white;
 }
-
 .section-2 {
+  background-color: #171b23;
   margin-top: 50%;
   width: 100%;
-  height: 950px;
+  height: 80em;
   color: white;
 }
 .section-2 h1 {
@@ -107,7 +101,6 @@ body {
   font-size: 4em;
   display: block;
 }
-
 @keyframes easytest {
   from {
     opacity: 0;
@@ -119,40 +112,34 @@ body {
   }
 }
 .art {
+  margin-top: 5em;
   margin-left: 100px;
   width: 60%;
   cursor: pointer;
   height: 20em;
-  box-shadow: 0px 0px 5px solid black;
+  background-color: #13161c;
 }
 .art__text {
   font-size: 2em;
 }
-
 .devide {
+  display: grid !important;
   width: 100%;
-  display: grid;
-  margin-top: 100px;
   height: 400px;
   grid-template-columns: auto auto auto;
 }
-
 .section-3 {
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 10em;
+  margin-bottom: 20%;
 }
-
 .text {
   margin-left: 10%;
 }
-
 .aboutMeImg {
-  width: 85%;
+  margin-top: 3em;
+  width: 95%;
   margin-bottom: 200px;
 }
-
 .about {
   margin-left: 10%;
 }
@@ -169,15 +156,29 @@ body {
   width: 80%;
   font-size: 1.5em;
 }
-
+.newtxt {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 8%;
+}
 .section-4 {
   margin-top: 100px;
-  height: 200px;
 }
 .section-4 footer {
   width: 100%;
-  background-color: #27262e;
-  height: 200px;
+  background-color: #171b23;
+  height: 250px;
 }
-
-/*# sourceMappingURL=style.css.map */
+.footinfo {
+  margin-left: 25%;
+  font-size: 2em;
+}
+.footinfo i {
+  font-size: 0.85em;
+  padding-left: 50px;
+}
+.footinfo h1 {
+  margin-left: 25%;
+  padding-top: 2%;
+}
