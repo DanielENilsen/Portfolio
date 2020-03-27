@@ -4,8 +4,7 @@ $backgroundColor:#13161c;
 
 
 @mixin backImage  { 
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
     background-size: 100% 100%;    
 }
 
@@ -25,10 +24,9 @@ body {
     height: 50px; 
     font-size: 1.5em;   
     font-weight: bold;
-    position: sticky;   
+    position: sticky;  
    
-    & li  {  
-    }
+   
     & a {
         margin-top: 20px;
         margin-right: 100px;
@@ -41,6 +39,7 @@ body {
 
 .section-1 {
     position: absolute;
+    width: 100%;
     
 }
 .head { 
@@ -153,8 +152,8 @@ body {
     }
 }
 .art {
-   margin-top: 5em;
-    margin-left: 100px;
+   margin-top: 5em; 
+   margin-left: 100px;    
     width:70%;
     cursor: pointer;
     height: 20em;
@@ -221,20 +220,20 @@ body {
     & footer {
         width: 100%;       
         background-color: #171b23; 
-        height: 350px;    
+        height: 43em;    
     }     
 }
 
 .footinfo { 
-    margin-left: 25%;
-    font-size: 2em;
+    margin-left: 20%;
+    font-size: 2.5em;
      & i {        
         font-size: 0.85em;
         padding-left: 50px;       
     }
     & h1 {
         margin-left: 25%;
-        padding-top: 2%;        
+        padding-top: 10%;        
     }
 
     &  i span {
@@ -242,3 +241,331 @@ body {
     }    
 }
 
+
+@media screen and (max-width: 320px) {
+
+    .head {        
+        display: flexbox; 
+        margin-top: 10%;
+        padding-left:0.5em;
+        flex-wrap: wrap;     
+    }
+
+    .spanclass {   
+     font-size: 3em;    
+     margin-top: 10%; 
+     margin-left: 4%;       
+      animation:  none ; 
+      &:hover { 
+        font-size: 3em;
+      }
+    } 
+
+    .classTWo { 
+        margin-left: 5%;
+     }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .head {        
+        display: flexbox; 
+        margin-top: 10%;
+        padding-left:0.5em;
+        flex-wrap: wrap;     
+    }
+ 
+    .spanclass {   
+     font-size: 3em;    
+     margin-top: 10%; 
+     margin-left: 4%;       
+      animation:  none ; 
+      &:hover { 
+        font-size: 3em;
+      }
+    } 
+           
+              
+    
+    .section-1  { 
+        position: static;  
+        max-width: 10%;
+        height: auto;            
+
+    }
+
+    .section-2 { 
+        height: 120em;
+    
+       & h1 {
+           margin-left: 10%;
+       
+        }   
+    }
+    .texte { 
+        padding-top: 7em;
+        padding-bottom: 2em;
+        padding-left:2.5em;
+
+    }
+    .classTWo { 
+       margin-left: 25%;
+    }
+
+    .devide {
+        grid-template-columns: auto;
+       
+    }   
+    
+    .art {
+        margin-top: 5em;         
+         width:80%;
+         cursor: pointer;
+         height: 20em;
+         margin-left: 10%;
+         background-color: $backgroundColor;    
+       
+         &__text { 
+             font-size: 2em;
+         }    
+     }
+     .section-4 { 
+        margin-top: 55em;
+        & footer {                
+            height: 20em;    
+        }     
+    }
+
+    .footinfo { 
+        margin-left: 5%;
+        font-size: 1.5em;
+        & i {      
+            padding-left: 0px;       
+        }
+        & h1 {
+            margin-left:20%;                 
+        }   
+    } 
+   
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px) and (orientation : landscape){
+    .head {        
+        display: flexbox;  
+        padding-left:10%;
+        width:100%;
+        flex-wrap: wrap;     
+    }
+
+    .spanclass {   
+     font-size: 3em;    
+     margin-top:20%; 
+     margin-left: 0%;       
+      animation:  none ; 
+      &:hover { 
+        font-size: 3em;
+      }
+    } 
+           
+              
+    
+    .section-1  { 
+        position: static;  
+        max-width: 10%;
+        height: auto;            
+
+    }
+
+    .section-2 { 
+        height: 120em;
+    
+       & h1 {
+           margin-left: 30%;
+       
+        }   
+    }
+    .texte { 
+        padding-top: 3.5em;      
+        padding-left:4.5em;
+
+    }
+    .classTWo { 
+       margin-left: 4%;
+    }
+
+    .devide {
+        grid-template-columns: auto;
+       
+    }   
+    
+    .art {
+        margin-top: 5em;         
+         width:80%;
+         cursor: pointer;
+         height: 20em;
+         margin-left: 10%;
+         background-color: $backgroundColor;    
+       
+         &__text { 
+             font-size: 2em;
+         }    
+     }
+     .section-4 { 
+        margin-top: 55em;
+        & footer {                
+            height: 20em;    
+        }     
+    }
+
+    .footinfo { 
+        margin-left: 5%;
+        font-size: 1.5em;
+        & i {      
+            padding-left: 0px;       
+        }
+        & h1 {
+            margin-left:20%;                 
+        }   
+    } 
+
+}
+
+@media screen and (min-device-width: 568px) and (max-device-width: 568px) and (orientation : landscape){
+    .head {       
+        padding-left:5%;      
+    }
+    .spanclass {   
+     font-size: 2.5em;    
+     margin-top:10%; 
+     margin-left: 1%;       
+      animation:  none ;       
+    }            
+              
+    
+    .section-1  { 
+        position: static;  
+        max-width: 10%;
+        height: auto;           
+
+    }
+
+    .section-2 { 
+       height: 120em;    
+       & h1 {
+           margin-left: 30%;       
+        }   
+    }
+    .texte { 
+        padding-top: 2.5em;      
+        padding-left: 4.5em;
+        font-size: 3.5em; 
+
+    }
+    .classTWo { 
+       margin-left: 4%;
+    }
+
+    .devide {
+        grid-template-columns: auto;
+       
+    }   
+    
+    .art {
+        margin-top: 5em;         
+        width:80%;
+        cursor: pointer;
+        height: 20em;
+        margin-left: 10%;
+        background-color: $backgroundColor;    
+        &__text { 
+            font-size: 2em;
+        }    
+     }
+     .section-4 { 
+        margin-top: 55em;
+        & footer {                
+            height: 20em;    
+        }     
+    }
+
+    .footinfo { 
+        margin-left: 5%;
+        font-size: 1.5em;
+        & i {      
+            padding-left: 16%;
+        }
+        & h1 {
+            margin-left: 30%;
+        }   
+    } 
+
+
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 328px) and (orientation: portrait) {
+    .head {
+        display: flexbox;
+        margin-top: 10%;
+        padding-left: 1em;
+        flex-wrap: wrap;
+      }
+    
+      .spanclass {
+        font-size: 2.5em;
+        margin-top: 10%;
+        margin-left: 4%;
+        animation: none;
+      }
+    
+      .spanclass:hover {
+        font-size: 3em;
+      }
+    
+      .section-1 {
+        position: static;
+        max-width: 10%;
+        height: auto;
+      }
+    
+    .section-2  { 
+    height: 100em;
+    }
+      .texte {
+        padding-top: 5em;
+        padding-bottom: 2em;
+        padding-left: 2em;
+      }
+    
+      .classTWo {
+        margin-left: 22%;
+      }
+        .art {
+        margin-top: 5em;
+        width: 80%;
+        cursor: pointer;
+        height: 15em;
+        margin-left: 10%;
+        background-color: #13161c;
+      }
+    
+      .section-4 { 
+            margin-top: 65em;
+            & footer {                
+                height: 20em;    
+            }     
+        }
+    
+    .footinfo { 
+    font-size:1.3em;
+    
+    }
+ 
+ }
+
+ @media screen and (min-width: 1200px) {
+
+    .texte { 
+        padding-left: 0%;
+
+    }
+ }
+ 

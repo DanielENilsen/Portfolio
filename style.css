@@ -5,6 +5,7 @@ body {
   padding: 0;
   color: white;
 }
+
 .main {
   top: 0px;
   height: 50px;
@@ -19,14 +20,18 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .section-1 {
   position: absolute;
+  width: 100%;
 }
+
 .head {
   display: flex;
   padding-left: 17em;
   position: absolute;
 }
+
 .spanclass {
   display: block;
   margin-left: 20px;
@@ -42,17 +47,21 @@ body {
 .spanclass:hover {
   font-size: 6em;
 }
+
 .solveOne {
   background-image: url("headerImage.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
 .classTWo {
   margin-left: 5.9%;
 }
+
 .welcome {
   color: red;
 }
+
 @keyframes animate {
   from {
     margin-top: 45%;
@@ -87,6 +96,7 @@ body {
   text-transform: none;
   color: white;
 }
+
 .section-2 {
   background-color: #171b23;
   margin-top: 50%;
@@ -100,6 +110,7 @@ body {
   font-size: 4em;
   display: block;
 }
+
 @keyframes easytest {
   from {
     opacity: 0;
@@ -121,24 +132,29 @@ body {
 .art__text {
   font-size: 2em;
 }
+
 .devide {
   display: grid !important;
   width: 100%;
   height: 400px;
   grid-template-columns: auto auto auto;
 }
+
 .section-3 {
   width: 100%;
   margin-bottom: 20%;
 }
+
 .text {
   margin-left: 10%;
 }
+
 .aboutMeImg {
   margin-top: 3em;
   width: 95%;
   margin-bottom: 200px;
 }
+
 .about {
   margin-left: 10%;
   font-family: "Quicksand", sans-serif;
@@ -158,23 +174,26 @@ body {
   width: 80%;
   font-size: 1.5em;
 }
+
 .newtxt {
   padding-top: 100px;
   text-align: center;
   font-size: 4em;
   margin-bottom: 8%;
 }
+
 .section-4 {
   margin-top: 150px;
 }
 .section-4 footer {
   width: 100%;
   background-color: #171b23;
-  height: 350px;
+  height: 43em;
 }
+
 .footinfo {
-  margin-left: 25%;
-  font-size: 2em;
+  margin-left: 20%;
+  font-size: 2.5em;
 }
 .footinfo i {
   font-size: 0.85em;
@@ -182,8 +201,315 @@ body {
 }
 .footinfo h1 {
   margin-left: 25%;
-  padding-top: 2%;
+  padding-top: 10%;
 }
 .footinfo i span {
   font-family: "Quicksand", sans-serif;
 }
+
+@media screen and (max-width: 320px) {
+  .head {
+    display: flexbox;
+    margin-top: 10%;
+    padding-left: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .spanclass {
+    font-size: 3em;
+    margin-top: 10%;
+    margin-left: 4%;
+    animation: none;
+  }
+  .spanclass:hover {
+    font-size: 3em;
+  }
+
+  .classTWo {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head {
+    display: flexbox;
+    margin-top: 10%;
+    padding-left: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .spanclass {
+    font-size: 3em;
+    margin-top: 10%;
+    margin-left: 4%;
+    animation: none;
+  }
+  .spanclass:hover {
+    font-size: 3em;
+  }
+
+  .section-1 {
+    position: static;
+    max-width: 10%;
+    height: auto;
+  }
+
+  .section-2 {
+    height: 120em;
+  }
+  .section-2 h1 {
+    margin-left: 10%;
+  }
+
+  .texte {
+    padding-top: 7em;
+    padding-bottom: 2em;
+    padding-left: 2.5em;
+  }
+
+  .classTWo {
+    margin-left: 25%;
+  }
+
+  .devide {
+    grid-template-columns: auto;
+  }
+
+  .art {
+    margin-top: 5em;
+    width: 80%;
+    cursor: pointer;
+    height: 20em;
+    margin-left: 10%;
+    background-color: #13161c;
+  }
+  .art__text {
+    font-size: 2em;
+  }
+
+  .section-4 {
+    margin-top: 55em;
+  }
+  .section-4 footer {
+    height: 20em;
+  }
+
+  .footinfo {
+    margin-left: 5%;
+    font-size: 1.5em;
+  }
+  .footinfo i {
+    padding-left: 0px;
+  }
+  .footinfo h1 {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px) and (orientation: landscape) {
+  .head {
+    display: flexbox;
+    padding-left: 10%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .spanclass {
+    font-size: 3em;
+    margin-top: 20%;
+    margin-left: 0%;
+    animation: none;
+  }
+  .spanclass:hover {
+    font-size: 3em;
+  }
+
+  .section-1 {
+    position: static;
+    max-width: 10%;
+    height: auto;
+  }
+
+  .section-2 {
+    height: 120em;
+  }
+  .section-2 h1 {
+    margin-left: 30%;
+  }
+
+  .texte {
+    padding-top: 3.5em;
+    padding-left: 4.5em;
+  }
+
+  .classTWo {
+    margin-left: 4%;
+  }
+
+  .devide {
+    grid-template-columns: auto;
+  }
+
+  .art {
+    margin-top: 5em;
+    width: 80%;
+    cursor: pointer;
+    height: 20em;
+    margin-left: 10%;
+    background-color: #13161c;
+  }
+  .art__text {
+    font-size: 2em;
+  }
+
+  .section-4 {
+    margin-top: 55em;
+  }
+  .section-4 footer {
+    height: 20em;
+  }
+
+  .footinfo {
+    margin-left: 5%;
+    font-size: 1.5em;
+  }
+  .footinfo i {
+    padding-left: 0px;
+  }
+  .footinfo h1 {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-device-width: 568px) and (max-device-width: 568px) and (orientation: landscape) {
+  .head {
+    padding-left: 5%;
+  }
+
+  .spanclass {
+    font-size: 2.5em;
+    margin-top: 10%;
+    margin-left: 1%;
+    animation: none;
+  }
+
+  .section-1 {
+    position: static;
+    max-width: 10%;
+    height: auto;
+  }
+
+  .section-2 {
+    height: 120em;
+  }
+  .section-2 h1 {
+    margin-left: 30%;
+  }
+
+  .texte {
+    padding-top: 2.5em;
+    padding-left: 4.5em;
+    font-size: 3.5em;
+  }
+
+  .classTWo {
+    margin-left: 4%;
+  }
+
+  .devide {
+    grid-template-columns: auto;
+  }
+
+  .art {
+    margin-top: 5em;
+    width: 80%;
+    cursor: pointer;
+    height: 20em;
+    margin-left: 10%;
+    background-color: #13161c;
+  }
+  .art__text {
+    font-size: 2em;
+  }
+
+  .section-4 {
+    margin-top: 55em;
+  }
+  .section-4 footer {
+    height: 20em;
+  }
+
+  .footinfo {
+    margin-left: 5%;
+    font-size: 1.5em;
+  }
+  .footinfo i {
+    padding-left: 16%;
+  }
+  .footinfo h1 {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 328px) and (orientation: portrait) {
+  .head {
+    display: flexbox;
+    margin-top: 10%;
+    padding-left: 1em;
+    flex-wrap: wrap;
+  }
+
+  .spanclass {
+    font-size: 2.5em;
+    margin-top: 10%;
+    margin-left: 4%;
+    animation: none;
+  }
+
+  .spanclass:hover {
+    font-size: 3em;
+  }
+
+  .section-1 {
+    position: static;
+    max-width: 10%;
+    height: auto;
+  }
+
+  .section-2 {
+    height: 100em;
+  }
+
+  .texte {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+  }
+
+  .classTWo {
+    margin-left: 22%;
+  }
+
+  .art {
+    margin-top: 5em;
+    width: 80%;
+    cursor: pointer;
+    height: 15em;
+    margin-left: 10%;
+    background-color: #13161c;
+  }
+
+  .section-4 {
+    margin-top: 65em;
+  }
+  .section-4 footer {
+    height: 20em;
+  }
+
+  .footinfo {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .texte {
+    padding-left: 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
