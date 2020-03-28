@@ -6,6 +6,15 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
 .main {
   top: 0px;
   height: 50px;
@@ -40,16 +49,23 @@ body {
   font-family: "Bellota Text", cursive;
   color: white;
   font-size: 5em;
-  animation: animate 0.5s;
-  cursor: default;
-  transition: font-size 0.5s;
-}
-.spanclass:hover {
-  font-size: 6em;
 }
 
 .solveOne {
   background-image: url("headerImage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: black !important;
+}
+
+.solveThree {
+  background-image: url("baseGame.JPG");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.solveTwo {
+  background-image: url("SpaceX.JPG");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -62,28 +78,9 @@ body {
   color: red;
 }
 
-@keyframes animate {
-  from {
-    margin-top: 45%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 40%;
-    opacity: 1;
-  }
-}
-@keyframes animate2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .texte {
   padding-left: 12em;
   cursor: pointer;
-  animation: animate2 1.5;
   display: block;
   font-size: 4.5em;
   text-align: center;
@@ -99,7 +96,7 @@ body {
 
 .section-2 {
   background-color: #171b23;
-  margin-top: 50%;
+  margin-top: 55%;
   width: 100%;
   height: 80em;
   color: white;
@@ -111,16 +108,6 @@ body {
   display: block;
 }
 
-@keyframes easytest {
-  from {
-    opacity: 0;
-    margin-top: 20%;
-  }
-  to {
-    margin-top: 10%;
-    opacity: 1;
-  }
-}
 .art {
   margin-top: 5em;
   margin-left: 100px;
@@ -130,7 +117,11 @@ body {
   background-color: #13161c;
 }
 .art__text {
-  font-size: 2em;
+  padding-top: 4em;
+  font-size: 2.5em;
+  padding-left: 35%;
+  font-weight: bold;
+  color: #c33f3f;
 }
 
 .devide {
@@ -229,7 +220,7 @@ body {
     margin-left: 5%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .head {
     display: flexbox;
     margin-top: 10%;
@@ -304,7 +295,49 @@ body {
     margin-left: 20%;
   }
 }
-@media screen and (min-device-width: 600px) and (max-device-width: 1000px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 780px) {
+  .head {
+    display: flexbox;
+    margin-top: 20%;
+    padding-left: 10em;
+    flex-wrap: wrap;
+  }
+
+  .spanclass {
+    font-size: 3em;
+    margin-top: 10%;
+    margin-left: 6%;
+    animation: none;
+  }
+
+  .classTWo {
+    margin-left: 25%;
+  }
+
+  .texte {
+    font-size: 5em;
+    padding-top: 8.5em;
+    padding-left: 4.5em;
+  }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1100px) and (orientation: landscape) {
+  .head {
+    font-size: 1.5em;
+  }
+
+  .texte {
+    margin-left: 2em;
+  }
+
+  .art {
+    width: 70%;
+    height: 50em;
+  }
+  .art__text {
+    font-size: 2em;
+  }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1067px) and (orientation: landscape) {
   .head {
     display: flexbox;
     padding-left: 10%;
@@ -336,7 +369,7 @@ body {
   }
 
   .texte {
-    padding-top: 3.5em;
+    padding-top: 4em;
     padding-left: 4.5em;
   }
 
@@ -372,21 +405,21 @@ body {
     font-size: 1.5em;
   }
   .footinfo i {
-    padding-left: 0px;
+    padding-left: 25%;
   }
   .footinfo h1 {
-    margin-left: 20%;
+    margin-left: 30%;
   }
 }
 @media screen and (min-device-width: 568px) and (max-device-width: 568px) and (orientation: landscape) {
   .head {
-    padding-left: 5%;
+    padding-left: 15%;
   }
 
   .spanclass {
     font-size: 2.5em;
     margin-top: 10%;
-    margin-left: 1%;
+    margin-left: 5%;
     animation: none;
   }
 
@@ -404,13 +437,13 @@ body {
   }
 
   .texte {
-    padding-top: 2.5em;
+    padding-top: 7.5em;
     padding-left: 4.5em;
     font-size: 3.5em;
   }
 
   .classTWo {
-    margin-left: 4%;
+    margin-left: 25%;
   }
 
   .devide {
@@ -509,6 +542,52 @@ body {
 @media screen and (min-width: 1200px) {
   .texte {
     padding-left: 0%;
+  }
+
+  .spanclass {
+    display: block;
+  }
+
+  .footinfo {
+    font-size: 2em;
+  }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1100px) and (orientation: landscape) {
+  .head {
+    font-size: 1.5em;
+  }
+
+  .texte {
+    margin-left: 2em;
+  }
+
+  .art {
+    width: 80%;
+    height: 30em;
+  }
+
+  .section-4 footer {
+    height: 25em;
+  }
+
+  .footinfo {
+    font-size: 2em;
+  }
+  .footinfo h1 {
+    margin-left: 30%;
+    font-size: 1.8em;
+  }
+  .footinfo i {
+    margin-top: 3%;
+    padding-left: 20%;
+  }
+
+  .about {
+    margin-top: -100px;
+  }
+  .about__aboutText {
+    margin-top: 20px;
+    font-size: 2em;
   }
 }
 

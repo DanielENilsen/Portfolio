@@ -1,4 +1,60 @@
 
+
+const mediaQueryCheck = window.matchMedia('(min-width: 1200px)');
+let seeMore = document.getElementById('seemore');
+let textDisplay = document.getElementById(".displayText");
+
+
+
+if(mediaQueryCheck.matches ) { 
+    if(textDisplay.style.display == "none") { 
+        textDisplay.style.display = "block"
+    } else { 
+        textDisplay.style.display = "none"
+        
+    }
+
+
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let textDisplay = document.querySelectorAll(".spanclass");
 let seeMore = document.getElementById('seemore');
 let artprojects = document.querySelector('.art');
@@ -68,3 +124,5 @@ setTimeout(function() {
 }
 
 window.addEventListener('scroll',textApper);
+
+*/
